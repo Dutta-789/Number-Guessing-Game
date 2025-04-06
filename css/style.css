@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --ff:"Monda", serif;
+    --colorprimary: #ffffff;
+    --colorsecondary: rgb(156, 7, 255);
+    --colorthird: rgb(205, 205, 205);
+    --score_color: #73fb18;
+    --high_color: #f44717;
+    --text:black;
+    --tt: bold var(--ff);
+}
+body{
+    font-family: var(-ff);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,141,209,1) 43%, rgba(0,212,255,1) 100%);
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 100px auto;
+    padding-top: 40px;
+}
+
+.guess_container{
+    height: 450px;
+    width: 500px;
+    font-family: var(--ff);
+    background-color: var(--colorprimary);
+    padding: 20px;   
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border:2px solid black;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#guess_button{
+    justify-content: center;
+    font-family: var(--tt);
+    font-weight: bold;
+    height: 50px;
+    width: 90px;
+    background-color: var(--colorsecondary);    
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color:var(--text);
+    
+
+}
+#guess_button:hover{
+    transition: 1s;
+    background-color: rgb(157, 56, 252);
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#guess_button:active{
+    transition:0.1s;
+    background-color:  rgb(115, 3, 220);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.exp_input{
+    font-family: var(--tt);
+    background-color: var(--colorthird);
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    border:  solid black;
+    box-sizing: content-box;
+}
+#score{
+    height:40px;
+    width:80px;
+    font-family:var(--tt);
+    font-weight: bold;
+    background-color: var(--score_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-radius: 6px;
+    border:2px solid black;
+}
+
+.answer_box{
+    background-color: var(--colorthird);
+    padding:5px;  
+    border-radius: 5px;
+    border: solid black;
+    
+}
+
